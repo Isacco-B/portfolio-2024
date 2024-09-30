@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -90,12 +89,13 @@ export default function CantactPage() {
               "Thank you for your message. I'll get back to you shortly.",
           });
         }
-      }).finally(() => setIsLoading(false));
+      })
+      .finally(() => setIsLoading(false));
   }
 
   return (
-    <section>
-      <Card>
+    <section className="my-12">
+      <Card className="p-4">
         <BlurFade delay={BLUR_FADE_DELAY * 12}>
           <div className="space-y-12">
             <CardTitle>
@@ -106,16 +106,19 @@ export default function CantactPage() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Get in Touch
                 </h2>
-                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
-                  Want to chat? Just shoot me a dm{" "}
+                <p className="text-muted-foreground text-base/relaxed md:text-xl/relaxed text-center">
+                  I’d love to hear from you! Whether you have a question, a
+                  project in mind, or just want to{" "}
                   <Link
                     href={DATA.contact.social.LinkedIn.url}
-                    className="text-blue-500 hover:underline"
+                    className="underline text-primary"
+                    target="_blank"
                   >
-                    with a direct question on twitter
-                  </Link>{" "}
-                  and I&apos;ll respond whenever I can. I will ignore all
-                  soliciting.
+                    connect
+                  </Link>
+                  , feel free to reach out. You can contact me through the form
+                  below or connect with me on my social media channels. Let’s
+                  discuss how we can work together!
                 </p>
               </div>
             </CardTitle>
