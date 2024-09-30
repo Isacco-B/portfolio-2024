@@ -2,7 +2,7 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon, MailPlus } from "lucide-react";
 
 export const DATA = {
-  name: "Isacco Bertoli",
+  name: "Isacco Bertoli - Full Stack & Blockchain Developer Bergamo, Italy",
   initials: "IB",
   url: "https://isaccobertoli.com",
   location: "Telgate, BG",

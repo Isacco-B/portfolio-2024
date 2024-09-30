@@ -4,11 +4,7 @@ import { ButtonLoading } from "@/components/button-loading";
 import { useToast } from "@/components/hooks/use-toast";
 import BlurFade from "@/components/magicui/blur-fade";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -94,34 +90,32 @@ export default function CantactPage() {
   }
 
   return (
-    <section className="my-12">
+    <section className="py-12">
       <Card className="p-4">
-        <BlurFade delay={BLUR_FADE_DELAY * 12}>
+        <BlurFade delay={BLUR_FADE_DELAY}>
           <div className="space-y-12">
-            <CardTitle>
-              <div className="space-y-3 text-center">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Contact
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Get in Touch
-                </h2>
-                <p className="text-muted-foreground text-base/relaxed md:text-xl/relaxed text-center">
-                  I’d love to hear from you! Whether you have a question, a
-                  project in mind, or just want to{" "}
-                  <Link
-                    href={DATA.contact.social.LinkedIn.url}
-                    className="underline text-primary"
-                    target="_blank"
-                  >
-                    connect
-                  </Link>
-                  , feel free to reach out. You can contact me through the form
-                  below or connect with me on my social media channels. Let’s
-                  discuss how we can work together!
-                </p>
+            <div className="space-y-3 text-center">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Contact
               </div>
-            </CardTitle>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Get in Touch
+              </h2>
+              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
+                I&apos;d love to hear from you! Whether you have a question, a
+                project in mind, or just want to{" "}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="underline text-primary"
+                  target="_blank"
+                >
+                  connect
+                </Link>
+                , feel free to reach out. You can contact me through the form
+                below or connect with me on my social media channels. Let&apos;s
+                discuss how we can work together!
+              </p>
+            </div>
             <CardContent>
               <form onSubmit={handleSubmit}>
                 <div className="space-y-6">
