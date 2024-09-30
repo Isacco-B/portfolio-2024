@@ -29,7 +29,7 @@ export default function Page() {
                 text={DATA.description}
               />
               <BlurFadeText
-                className="max-w-[600px]"
+                className="max-w-[600px] text-sm md:text-lg"
                 delay={BLUR_FADE_DELAY}
                 text={"contact@isaccobertoli.com"}
               />
