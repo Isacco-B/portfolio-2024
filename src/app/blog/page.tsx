@@ -1,5 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { BLUR_FADE_DELAY } from "../page";
+import { BLUR_FADE_DELAY } from "@/constants";
 
 export default function BlogPage() {
   return (

@@ -7,8 +7,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Button } from "@/components/ui/button";
+import { BLUR_FADE_DELAY } from "@/constants";
 
-export const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (

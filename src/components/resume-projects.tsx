@@ -2,10 +2,11 @@
 
 import { DATA } from "@/data/resume";
 import { useState } from "react";
-import { BLUR_FADE_DELAY } from "@/app/page";
 import { ProjectCard } from "./project-card";
 import { Button } from "./ui/button";
+import { BLUR_FADE_DELAY } from "@/constants";
 import BlurFade from "./magicui/blur-fade";
+
 
 const PROJECTS_PER_PAGE = 4;
 
