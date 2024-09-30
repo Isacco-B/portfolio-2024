@@ -1,10 +1,12 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import ResumeProjects from "@/components/resume-projects";
+import Markdown from "react-markdown";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { Button } from "@/components/ui/button";
 
 export const BLUR_FADE_DELAY = 0.04;
 
@@ -28,7 +30,7 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28">
+              <Avatar className="size-28 md:size-32">
                 <AvatarImage
                   alt={DATA.name}
                   src={DATA.avatarUrl}
@@ -45,9 +47,14 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <p className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert leading-normal">
             {DATA.summary}
-          </p>
+          </Markdown>
+          <div className="w-full text-center mt-2">
+            <a href="/isacco-bertoli-resume.pdf" download>
+              <Button className="w-1/2 md:w-1/3">View Resume</Button>
+            </a>
+          </div>
         </BlurFade>
       </section>
       <section id="work">
@@ -93,6 +100,25 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="services">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Services</h2>
+          </BlurFade>
+          {DATA.services.map((skill, id) => (
+            <BlurFade key={id} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <ResumeCard
+                key={skill.title}
+                altText={skill.title}
+                logoUrl={skill.logoUrl}
+                title={skill.title}
+                description={skill.description}
+                showDescription
               />
             </BlurFade>
           ))}
