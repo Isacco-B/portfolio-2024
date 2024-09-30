@@ -8,10 +8,36 @@ export const DATA = {
   location: "Telgate, BG",
   locationLink: "https://www.google.com/maps/place/bergamo",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Full Stack & Blockchain Developer | Building Digital Solutions in Bergamo, Italy",
   summary:
-    "After years of working as an electrician worker in the industrial automation field, I decided to change career and embark on the path to becoming a web developer. I have recently completed my studies as a Full Stack and Blockchain Developer, and I am excited to start a new work experience in this sector putting my new skills to good use.",
+    "With a background in **industrial automation as an electrician**, I decided to shift my career path to follow my **passion for technology**. After years of hands-on experience and studies, I specialized as a **Full Stack and Blockchain Developer**. I’ve developed strong skills in building both **web and decentralized applications**, and I am excited to apply these new abilities to **solve real-world problems** and create **innovative solutions**. I’m now ready for **new challenges and opportunities** in the tech industry, where I can contribute with my **analytical approach and dedication**.",
   avatarUrl: "/me.png",
+  services: [
+    {
+      logoUrl: "/website.png",
+      title: "Web Development",
+      description:
+        "From concept to deployment, I create responsive, high-performance web applications using modern frameworks like React, Node.js, and Express.",
+    },
+    {
+      logoUrl: "/blockchain.png",
+      title: "Blockchain Development",
+      description:
+        "I specialize in building decentralized applications (dApps) and integrating blockchain into existing systems.",
+    },
+    {
+      logoUrl: "/api.png",
+      title: "API Development & Integration",
+      description:
+        "Need to connect your app with external services? I design and implement robust APIs that ensure seamless data flow and communication across platforms.",
+    },
+    {
+      logoUrl: "/automation.png",
+      title: "Automation & IoT Solutions",
+      description:
+        "Leveraging my background in industrial automation, I can develop IoT-based solutions for remote monitoring and control.",
+    },
+  ],
   skills: [
     "Javascript",
     "HTML",
@@ -67,20 +93,20 @@ export const DATA = {
       company: "Elettronica Installata",
       href: "https://atomic.finance",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
+      location: "Telgate, BG",
+      title: "Electrical contractor",
       logoUrl: "/elettronicaInstallata.png",
       start: "May 2018",
       end: "Oct 2022",
       description:
-        "Impianti civili e industriali, cablaggio quadri di potenza e automazione. Bordi macchina e programmazione PLC.",
+        "Civil and industrial electrical systems, power and automation panel wiring. Machine edges and PLC programming.",
     },
   ],
   education: [
     {
       school: "Ikaros",
       href: "https://www.istitutopolitecnico.org/percorsi/elettronica/",
-      degree: "Elettronica Elettrotecnica",
+      degree: "Electrical Engineering",
       logoUrl: "/ikaros.svg",
       start: "2015",
       end: "2018",
@@ -88,7 +114,7 @@ export const DATA = {
     {
       school: "Start2Impact",
       href: "https://www.start2impact.it/master/full-stack-development/",
-      degree: "FullStack Developer",
+      degree: "FullStack Developer | Blockchain Developer",
       logoUrl: "/start2impact.png",
       start: "2022",
       end: "2024",
@@ -311,7 +337,7 @@ export const DATA = {
     },
     {
       title: "esp32-automatic-irrigation",
-      href: "https://github.com/Isacco-B/news-website",
+      href: "https://github.com/Isacco-B/esp32-automatic-irrigation-api",
       dates: "17/02/2024",
       active: true,
       description:
@@ -385,7 +411,7 @@ export const DATA = {
     },
     {
       title: "web3-auction",
-      href: "https://demo6.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/web3-auction",
       dates: "10/09/2023",
       active: true,
       description:
@@ -400,11 +426,6 @@ export const DATA = {
         "Web3",
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://demo6.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
           href: "https://github.com/Isacco-B/web3-auction",
@@ -470,13 +491,18 @@ export const DATA = {
     },
     {
       title: "news-website",
-      href: "https://github.com/Isacco-B/news-website",
-      dates: "5/06/2024",
+      href: "https://demo5.isaccobertoli.com/",
+      dates: "2/03/2023",
       active: true,
       description:
         "News-Website is a platform that displays the latest and most popular news, built using only HTML, CSS, and JavaScript.",
       technologies: ["Javascript", "Html", "Scss", "WebPack"],
       links: [
+        {
+          type: "Website",
+          href: "https://demo5.isaccobertoli.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "Source",
           href: "https://github.com/Isacco-B/news-website",
