@@ -12,8 +12,12 @@ export default function BlogPage() {
           Coming Soon
         </h2>
         <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
-          Want to chat? Just shoot me a dm with a direct question on twitter and
-          I`&apos;`ll respond whenever I can. I will ignore all soliciting.
+          Welcome to my blog! This space is dedicated to sharing insights, tips,
+          and thoughts on web development, blockchain technology, and the latest
+          trends in the tech industry. While the blog is still under
+          construction, I`&apos;`m excited to bring you valuable content that
+          will inspire and inform. Stay tuned for updates, and feel free to
+          reach out if you have topics you`&apos;`d like to see covered!
         </p>
       </div>
     </BlurFade>
