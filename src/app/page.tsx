@@ -28,6 +28,11 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFadeText
+                className="max-w-[600px]"
+                delay={BLUR_FADE_DELAY}
+                text={"contact@isaccobertoli.com"}
+              />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 md:size-32">
