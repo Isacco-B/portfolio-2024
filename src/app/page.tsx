@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Button } from "@/components/ui/button";
 import { BLUR_FADE_DELAY } from "@/constants";
+import { CertificateCard } from "@/components/certificate-card";
 
 
 export default function Page() {
@@ -78,7 +79,6 @@ export default function Page() {
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
-                href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
@@ -99,7 +99,6 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
@@ -110,20 +109,40 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="services">
+      <section id="certificates">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Certificates</h2>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto w-full">
+            {DATA.certificate.map((certificate, id) => (
+              <BlurFade
+                key={certificate.title}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <CertificateCard
+                  title={certificate.title}
+                  image={certificate.image}
+                  date={certificate.date}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Services</h2>
           </BlurFade>
           {DATA.services.map((skill, id) => (
-            <BlurFade key={id} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+            <BlurFade key={id} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
               <ResumeCard
                 key={skill.title}
                 altText={skill.title}
                 logoUrl={skill.logoUrl}
                 title={skill.title}
                 description={skill.description}
-                showDescription
               />
             </BlurFade>
           ))}
@@ -131,12 +150,12 @@ export default function Page() {
       </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 14 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>
             ))}

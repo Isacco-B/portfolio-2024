@@ -120,6 +120,23 @@ export const DATA = {
       end: "2024",
     },
   ],
+  certificate: [
+    {
+      image: "/certificatoBlockChain.png",
+      title: "BlockChain Development",
+      date: "Oct 2023",
+    },
+    {
+      image: "/certificatoFullStack.png",
+      title: "Full Stack Development",
+      date: "May 2024",
+    },
+    {
+      image: "/certificatoFrontEnd.png",
+      title: "Front End Development",
+      date: "Nov 2024",
+    },
+  ],
   projects: [
     {
       title: "form-endpoints",
