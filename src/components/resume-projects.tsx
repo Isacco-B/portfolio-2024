@@ -24,7 +24,7 @@ export default function ResumeProjects() {
   return (
     <div className="w-full py-12">
       <div className="space-y-12 w-full">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -44,7 +44,7 @@ export default function ResumeProjects() {
           {displayedProjects.map((project, id) => (
             <BlurFade
               key={project.title}
-              delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 16 + id * 0.05}
             >
               <ProjectCard
                 href={project.href}
