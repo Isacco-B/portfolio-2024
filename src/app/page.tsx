@@ -2,6 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import ResumeProjects from "@/components/resume-projects";
 import Markdown from "react-markdown";
+import Image from "next/image";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -10,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { BLUR_FADE_DELAY } from "@/constants";
 import { CertificateCard } from "@/components/certificate-card";
 
-
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
@@ -18,12 +18,20 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className=" inline-flex items-center gap-2">
+                  <span className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                    {`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                  </span>
+                  <Image
+                    src="/wavingHand.svg"
+                    alt="waving hand"
+                    width={92}
+                    height={92}
+                    className=" hidden md:block"
+                  />
+                </div>
+              </BlurFade>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
