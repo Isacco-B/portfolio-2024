@@ -139,6 +139,71 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "java-notes",
+      href: "https://github.com/Isacco-B/java-notes",
+      dates: "17/12/2024",
+      active: true,
+      description:
+        "Java Notes is a cross-platform application that enables users to securely create, manage, and organize their personal notes.",
+      technologies: ["Java", "Javalin", "MongoDB", "JavaFX", "Atlantafx UI"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Isacco-B/java-notes",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/javaNotes.png",
+      video: "",
+    },
+    {
+      title: "owly",
+      href: "https://github.com/Isacco-B/Owly",
+      dates: "10/11/2024",
+      active: true,
+      description:
+        "Owly Courses API is a RESTful service designed to support the management of cross-functional courses. These courses combine multiple subjects to foster curiosity and enhance learning experiences.",
+      technologies: ["PHP", "MySQL", "RESTful JSON API", "PDO"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Isacco-B/Owly",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/PHPLogo.png",
+      video: "",
+    },
+    {
+      title: "global-warming",
+      href: "https://demo6.isaccobertoli.com",
+      dates: "25/10/2024",
+      active: true,
+      description:
+        "A website that provide clear, comprehensive data visualization and analysis of key climate indicators that shape our understanding of global warming.",
+      technologies: [
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://demo6.isaccobertoli.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Isacco-B/global-warming",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/globalWarming.png",
+      video: "",
+    },
+    {
       title: "form-endpoints",
       href: "https://demo14.isaccobertoli.com",
       dates: "15/09/2024",
