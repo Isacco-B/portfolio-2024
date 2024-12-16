@@ -134,7 +134,12 @@ export const DATA = {
     {
       image: "/certificatoFrontEnd.png",
       title: "Front End Development",
-      date: "Nov 2024",
+      date: "Oct 2024",
+    },
+    {
+      image: "/certificatoBackEnd.png",
+      title: "Back End Development",
+      date: "Dec 2024",
     },
   ],
   projects: [
