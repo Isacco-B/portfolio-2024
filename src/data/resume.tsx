@@ -90,8 +90,20 @@ export const DATA = {
 
   work: [
     {
+      company: "AiSent",
+      href: "https://aisent.io/en",
+      badges: [],
+      location: "Gorle, BG",
+      title: "Software Developer",
+      logoUrl: "/aisentsrl.jpeg",
+      start: "January 2025",
+      end: null,
+      description:
+        "Computer vision, Industrial Intelligence, Machine learning, Inspection, control and tracking.",
+    },
+    {
       company: "Elettronica Installata",
-      href: "https://atomic.finance",
+      href: "https://www.elettronicainstallata.com/",
       badges: [],
       location: "Telgate, BG",
       title: "Electrical contractor",
