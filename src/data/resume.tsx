@@ -1,16 +1,16 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, MailPlus } from "lucide-react";
+import { HomeIcon, MailPlus, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Isacco Bertoli - Full Stack & Blockchain Developer Bergamo, Italy",
+  name: "Isacco Bertoli - Full Stack Developer & Industrial Automation | Bergamo, Italy",
   initials: "IB",
   url: "https://isaccobertoli.com",
   location: "Telgate, BG",
   locationLink: "https://www.google.com/maps/place/bergamo",
   description:
-    "Full Stack & Blockchain Developer | Building Digital Solutions in Bergamo, Italy",
+    "Full Stack Developer & Industrial Automation Specialist | Building Digital and Industrial Solutions in Bergamo, Italy",
   summary:
-    "With a background in **industrial automation as an electrician**, I decided to shift my career path to follow my **passion for technology**. After years of hands-on experience and studies, I specialized as a **Full Stack and Blockchain Developer**. I’ve developed strong skills in building both **web and decentralized applications**, and I am excited to apply these new abilities to **solve real-world problems** and create **innovative solutions**. I’m now ready for **new challenges and opportunities** in the tech industry, where I can contribute with my **analytical approach and dedication**.",
+    "With a solid background in **industrial automation as an electrician and PLC programmer**, I evolved my career to combine hardware expertise with modern software development. I specialize in **Full Stack web development** and **industrial automation systems**, designing and building **human-machine interfaces**, managing the complete machine production lifecycle, and developing **IoT solutions for remote monitoring and control**. I bridge the gap between the physical and digital worlds, creating effective solutions that address real needs in the **industrial sector**.",
   avatarUrl: "/me.png",
   services: [
     {
@@ -18,12 +18,6 @@ export const DATA = {
       title: "Web Development",
       description:
         "From concept to deployment, I create responsive, high-performance web applications using modern frameworks like React, Node.js, and Express.",
-    },
-    {
-      logoUrl: "/blockchain.png",
-      title: "Blockchain Development",
-      description:
-        "I specialize in building decentralized applications (dApps) and integrating blockchain into existing systems.",
     },
     {
       logoUrl: "/api.png",
@@ -35,7 +29,7 @@ export const DATA = {
       logoUrl: "/automation.png",
       title: "Automation & IoT Solutions",
       description:
-        "Leveraging my background in industrial automation, I can develop IoT-based solutions for remote monitoring and control.",
+        "Leveraging my background in industrial automation and PLC programming, I develop IoT-based solutions for remote monitoring, control, and custom HMI interfaces for industrial machinery.",
     },
   ],
   skills: [
@@ -94,16 +88,16 @@ export const DATA = {
       href: "https://aisent.io/en",
       badges: [],
       location: "Gorle, BG",
-      title: "Software Developer",
+      title: "Programmer | Electrician",
       logoUrl: "/aisentsrl.jpeg",
       start: "January 2025",
       end: null,
       description:
-        "Computer vision, Industrial Intelligence, Machine learning, Inspection, control and tracking.",
+        "Custom HMI programming for industrial machinery, PLC programming (Siemens, Wago), mechanical and electrical design, creation and modification of electrical schematics, supplier and warehouse management, wiring, assembly, testing and on-site installation.",
     },
     {
       company: "Elettronica Installata",
-      href: "https://www.elettronicainstallata.com/",
+      href: "",
       badges: [],
       location: "Telgate, BG",
       title: "Electrical contractor",
@@ -111,14 +105,14 @@ export const DATA = {
       start: "May 2018",
       end: "Oct 2022",
       description:
-        "Civil and industrial electrical systems, power and automation panel wiring. Machine edges and PLC programming.",
+        "Civil and industrial electrical systems, automation panel wiring, machine edges and testing. MV/LV electrical cabinets, power and distribution panels, and lighting systems.",
     },
   ],
   education: [
     {
       school: "Ikaros",
       href: "https://www.istitutopolitecnico.org/percorsi/elettronica/",
-      degree: "Electrical Engineering",
+      degree: "Electrical Engineering (Domotics, Electrical Systems, CAD)",
       logoUrl: "/ikaros.svg",
       start: "2015",
       end: "2018",
@@ -126,7 +120,7 @@ export const DATA = {
     {
       school: "Start2Impact",
       href: "https://www.start2impact.it/master/full-stack-development/",
-      degree: "FullStack Developer | Blockchain Developer",
+      degree: "FullStack Developer",
       logoUrl: "/start2impact.png",
       start: "2022",
       end: "2024",
@@ -134,27 +128,71 @@ export const DATA = {
   ],
   certificate: [
     {
-      image: "/certificatoBlockChain.png",
-      title: "BlockChain Development",
-      date: "Oct 2023",
-    },
-    {
-      image: "/certificatoFullStack.png",
+      image: "/cerificates/certificatoFullStack.png",
       title: "Full Stack Development",
       date: "May 2024",
     },
     {
-      image: "/certificatoFrontEnd.png",
+      image: "/cerificates/certificatoFrontEnd.png",
       title: "Front End Development",
       date: "Oct 2024",
     },
     {
-      image: "/certificatoBackEnd.png",
+      image: "/cerificates/certificatoBackEnd.png",
       title: "Back End Development",
       date: "Dec 2024",
     },
   ],
   projects: [
+    {
+      title: "automatic-gate-app-v2",
+      href: "https://github.com/Isacco-B/automatic-gate-app-v2",
+      dates: "2025",
+      active: true,
+      description: "Rebuilt version of the automatic gate React Native app.",
+      technologies: [
+        "React-Native",
+        "Typescript",
+        "Expo",
+        "Expo-Router",
+        "Mqtt",
+        "EAS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Isacco-B/automatic-gate-app-v2",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/gateApp2.png",
+      video: "",
+    },
+    {
+      title: "automatic-watertank-app",
+      href: "https://github.com/Isacco-B/automatic-watertank-app",
+      dates: "2025",
+      active: true,
+      description:
+        "React Native mobile app to monitor and control an automatic water tank system via MQTT and ESP32.",
+      technologies: [
+        "React-Native",
+        "Typescript",
+        "Expo",
+        "Expo-Router",
+        "Mqtt",
+        "React Native Paper",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Isacco-B/automatic-watertank-app",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/watertank.jpg",
+      video: "",
+    },
     {
       title: "java-notes",
       href: "https://github.com/Isacco-B/java-notes",
@@ -170,7 +208,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/javaNotes.png",
+      image: "/projects/javaNotes.png",
       video: "",
     },
     {
@@ -188,12 +226,12 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/PHPLogo.png",
+      image: "/projects/PHPLogo.png",
       video: "",
     },
     {
       title: "global-warming",
-      href: "https://demo6.isaccobertoli.com",
+      href: "https://github.com/Isacco-B/global-warming",
       dates: "25/10/2024",
       active: true,
       description:
@@ -207,22 +245,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo6.isaccobertoli.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/global-warming",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/globalWarming.png",
+      image: "/projects/globalWarming.png",
       video: "",
     },
     {
       title: "form-endpoints",
-      href: "https://demo14.isaccobertoli.com",
+      href: "https://github.com/Isacco-B/form-endpoints",
       dates: "15/09/2024",
       active: true,
       description:
@@ -239,23 +272,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo14.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/form-endpoints",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/5RJkYwnx3fDFWsj/download/Peek%202024-09-30%2011-10.mp4",
+      image: "/projects/formEndpoints.png",
+      video: "",
     },
     {
       title: "safe-note",
-      href: "https://demo11.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/safe-note",
       dates: "23/08/2024",
       active: true,
       description:
@@ -272,23 +299,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo11.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/safe-note",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/ZaieLJwKiKJdCap/download/Peek%202024-09-30%2011-17.mp4",
+      image: "/projects/safeNote.png",
+      video: "",
     },
     {
       title: "bg-remover",
-      href: "https://demo10.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/bg-remover",
       dates: "12/07/2024",
       active: true,
       description:
@@ -307,23 +328,17 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo10.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/bg-remover",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/ZpqCbx8jEj2dxpi/download/Peek%202024-09-30%2011-23.mp4",
+      image: "/projects/bgRemover.png",
+      video: "",
     },
     {
       title: "flea-market",
-      href: "https://demo2.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/flea-market-landing-page",
       dates: "5/06/2024",
       active: true,
       description:
@@ -331,23 +346,17 @@ export const DATA = {
       technologies: ["Html", "Tailwind", "Javascript"],
       links: [
         {
-          type: "Website",
-          href: "https://demo2.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/flea-market-landing-page",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/WBxDSgztmcBn3nZ/download/Peek%202024-09-30%2011-30.mp4",
+      image: "/projects/fleaMarket.png",
+      video: "",
     },
     {
       title: "courseopia-online-course",
-      href: "https://demo8.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/courseopia-online-course-platform",
       dates: "8/05/2024",
       active: true,
       description:
@@ -366,19 +375,13 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo8.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/courseopia-online-course-platform",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/oDzxk6GPaMFFxD9/download/Peek%202024-09-30%2011-28.mp4",
+      image: "/projects/courseOnline.png",
+      video: "",
     },
     {
       title: "esp32-automatic-gate",
@@ -454,7 +457,7 @@ export const DATA = {
     },
     {
       title: "vegetarian-recipe",
-      href: "https://demo4.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/vegetarian-recipe",
       dates: "17/01/2024",
       active: true,
       description:
@@ -468,19 +471,13 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://demo4.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/Isacco-B/vegetarian-recipe",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://cloud.isaccobertoli.com/s/2N2HMcaJaBqkp4E/download/Peek%202024-09-30%2011-34.mp4",
+      image: "/projects/vegetarianRecipe.png",
+      video: "",
     },
     {
       title: "express-project",
@@ -509,99 +506,14 @@ export const DATA = {
       video: "",
     },
     {
-      title: "web3-auction",
-      href: "https://github.com/Isacco-B/web3-auction",
-      dates: "10/09/2023",
-      active: true,
-      description:
-        "A platform for managing the sale of electric vehicles through a charity auction for a micromobility company. Users can register and place bids, with completed transactions recorded on the blockchain.",
-      technologies: [
-        "Django",
-        "Django-rest-framework",
-        "Javascript",
-        "TailwindCSS",
-        "Postgresql",
-        "Redis",
-        "Web3",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Isacco-B/web3-auction",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/web3Auction.png",
-      video: "",
-    },
-    {
-      title: "parking-web3",
-      href: "https://github.com/Isacco-B/parking-web3",
-      dates: "26/08/2023",
-      active: true,
-      description:
-        "Parking Web3 is an online platform for booking or renting parking spaces. It interacts with a custom smart contract, ensuring secure transactions through the use of blockchain technology.",
-      technologies: ["React", "Javascript", "Html", "Css", "Solidity", "Web3"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Isacco-B/parking-web3",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/parkingWeb3.png",
-      video: "",
-    },
-    {
-      title: "bitcoin-exchange",
-      href: "https://github.com/Isacco-B/bitcoin-exchange",
-      dates: "15/05/2023",
-      active: true,
-      description:
-        "An online Bitcoin exchange platform created with Django. It implements authentication, automatically assigns Bitcoin values, and allows users to create buy and sell orders. Completed orders are recorded on the blockchain.",
-      technologies: ["Django", "Djongo", "Mongodb", "Python", "HTML", "CSS"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Isacco-B/bitcoin-exchange",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/bitcoinExchange.png",
-      video: "",
-    },
-    {
-      title: "migrant-school",
-      href: "https://github.com/Isacco-B/migrantSchool",
-      dates: "20/03/2023",
-      active: true,
-      description:
-        "Web platform for creating educational certificates for migrants, securely recorded on the blockchain through a transaction.",
-      technologies: ["Django", "Redis", "HTML", "CSS", "Python", "Goerli"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/Isacco-B/migrantSchool",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/migrantSchool.png",
-      video: "",
-    },
-    {
       title: "news-website",
-      href: "https://demo5.isaccobertoli.com/",
+      href: "https://github.com/Isacco-B/news-website",
       dates: "2/03/2023",
       active: true,
       description:
         "News-Website is a platform that displays the latest and most popular news, built using only HTML, CSS, and JavaScript.",
       technologies: ["Javascript", "Html", "Scss", "WebPack"],
       links: [
-        {
-          type: "Website",
-          href: "https://demo5.isaccobertoli.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
         {
           type: "Source",
           href: "https://github.com/Isacco-B/news-website",
